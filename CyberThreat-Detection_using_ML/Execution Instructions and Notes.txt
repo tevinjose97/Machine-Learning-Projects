@@ -1,0 +1,58 @@
+Important Notes:
+
+1)The google drive link (accessible using TUOS mail) containing the trained models and datasets is given below -
+
+https://drive.google.com/drive/folders/1Z9Z2i90C_CqP6Axgiu31IDrNBBSTeRDv?usp=sharing
+
+2)The program uses the following file structure hierarchy -
+
+\root
+  \UNSW_Columns.txt
+  \UNSW_Trn.csv
+  \UNSW_Tst.csv
+  \UNSW_Pred_Tst.csv
+  \AWID-R-Trn.csv
+  \AWID-R-Tst.csv
+  \AWID-R-Pred-Tst.csv
+  \AWID_Columns.txt
+  \Threat_Hunting_Tool.py
+  \Saved_Models
+    \UNSW_Model
+      \tdm_model.sav
+    \AWID_Model
+      \tdm_model.sav
+
+3)UNSW-NB15 Dataset Files
+a) Column File - UNSW_Columns.txt
+b) Train Dataset (Labelled) - UNSW_Trn.csv
+c) Test Dataset (Labelled) - UNSW_Tst.csv
+d) Prediction Dataset (Unlabelled Test Dataset) - UNSW_Pred_Tst.csv
+
+4)AWID Dataset Files
+a) Column File - AWID_Columns.txt
+b) Train Dataset (Labelled) - AWID-R-Trn.csv
+c) Test Dataset (Labelled) - AWID-R-Tst.csv
+d) Prediction Dataset (Unlabelled Test Dataset) - AWID-R-Pred-Tst.csv
+
+5)Missing Characters
+a)AWID Dataset: ?
+b)UNSW Dataset: -
+
+Execution:
+
+1)The program requires the following libraries -
+
+imbalanced_learn==0.7.0
+catboost==0.26.1
+numpy==1.20.2
+altair==4.1.0
+matplotlib==3.3.4
+pandas==1.2.4
+streamlit==0.85.1
+imblearn==0.0
+scikit_learn==0.24.2
+
+2)The program trains the Catboost Classifier using 'GPU'. If 'GPU' is not available
+ the Catboost Classifier parameter 'task_type' has to be set to 'CPU'
+
+3)Run program using "streamlit run Threat_Hunting_Tool.py"
