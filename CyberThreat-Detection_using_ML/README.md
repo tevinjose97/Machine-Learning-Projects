@@ -1,43 +1,38 @@
-# Shipping-Cruise
+# Information Guide
 
-## Project Description
-This project is an example of a basic program which stores the data of passenger’s details and the ship details separately and provides admin rights to the officials of the shipping cruise and allows the officials to set a variable cost based on the requirements of the respective passenger, adding incentives and allowing the user to view their passenger bookings. 
-<br>It enables the passenger to search for the ship on the basis of destination, facilities, dates and length of cruise.
-<br>Note: "Code.py" requires files "passenger.dat" and "trip_details.dat" in order to run. This was a High School project created using Python v2.7.4.
+## 1) Train Option
+**Function:** To train and save the model on a specified dataset.
+**Info:** The program only supports labelled datasets with threats and normal instances \
+     to train the machine learning models. The model assumes the training dataset is highly imbalanced \
+     where the normal class count >>> anomaly/ threat class count. The dataset must be in csv \
+     format and could have integrated column headers or separate\
+     column headers (text file). Certain additional info regarding the dataset such as the\
+     label column and the missing value (na) character should also be specified to correctly load\
+     and infer data before training the model.
 
-## User Documentation
+## 2) Train-Test Performance
+**Function:** To view the performance of the model on the Testing split (20%)\
+    of the Training set
+**Info:** The model is selected from the list of saved models to view the performance\
+    metrics
 
-### To Create A User Account:
-1. Select ‘Create New Account’ in main menu.
-2. Enter username and password.
-3. Enter member details.
+## 3) Test Option
+**Function:** To test the saved models on a specified dataset and obtain\
+    performance metrics.
+**Info:** The program requires labelled datasets for testing the models.\
+     It must also have the same features as the training dataset.\
+     The dataset must be in csv format and could have integrated column headers or separate\
+     column headers (text file). Certain additional info regarding the dataset such as the\
+     missing value (na) character should also be specified to correctly load\
+     and infer data before testing the model.
 
-### To Book A Ticket/Seat:
-1. Select ‘Login’ in main menu.
-2. Enter username and password.
-3. Select ‘Find ship and book room’ in user account menu.
-4. Select the ship based on destination or length of cruise or facilities or date of cruise.
-5. Enter no. of passengers, no. of rooms to be booked and confirm the booking.
-
-### To View Passenger Booking Or Passenger Details:
-1. Select ‘Login’ in main menu.
-2. Enter username and password.
-3. Select ‘View Passenger Booking ‘in user account menu to view bookings or select ‘View Passenger Details’ in user account menu to view passenger details.
-
-### To Cancel Passenger Bookings:
-1. Select ‘Login’ in main menu.
-2. Enter username and password.
-3. Select ‘Cancel passenger bookings’ in user account menu.
-4. Select the booking of your choice to be cancelled.
-
-### To Edit Passenger Details:
-1. Select ‘Login’ in main menu.
-2. Enter username and password.
-3. Select ‘Edit passenger details in user account menu.
-4. Edit the concerned details.
-
-### To Change Password or Change Security Question:
-1. Select ‘Login’ in main menu.
-2. Enter username and password.
-3. Select ‘change password’ to change password or select ‘change security question’ to change security question in user account menu.
-4. Follow the instructions displayed on the screen.
+## 4) Threat/ Anomaly Prediction Option
+**Function:** To obtain predictions and its visualization using the saved models on\
+    a specified dataset.
+**Info:** The dataset provided should have the same features as the training \
+     dataset and does not require the label column (to be predicted).\
+     The dataset must be in csv format and could have integrated column headers or separate\
+     column headers (text file). Certain additional info regarding the dataset such as the\
+     missing value (na) character should also be specified to correctly load and infer \
+     data before making predictions. Visualization can only be called after configuring\
+     the input dataset and obtaining the predictions.
