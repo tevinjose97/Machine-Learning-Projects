@@ -1,7 +1,7 @@
 # Information Guide
 
 ## 1) Train Option
-**Function:** To train and save the model on a specified dataset.
+**Function:** To train and save the model on a specified dataset. <br>
 **Info:** The program only supports labelled datasets with threats and normal instances \
      to train the machine learning models. The model assumes the training dataset is highly imbalanced \
      where the normal class count >>> anomaly/ threat class count. The dataset must be in csv \
