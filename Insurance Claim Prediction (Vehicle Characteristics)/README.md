@@ -1,5 +1,5 @@
 ## Objective: 
-To develop a predictive model that uses vehicle characteristics to accurately predict insurance claim payments
+To develop a predictive model that uses vehicle characteristics to accurately predict insurance claim payments.
 
 ## Method:
 * Inspect the dataset
