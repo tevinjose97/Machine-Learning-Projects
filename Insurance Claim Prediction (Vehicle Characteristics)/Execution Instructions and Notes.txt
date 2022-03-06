@@ -1,0 +1,11 @@
+Important Notes:
+
+1)The train.csv file provided contains records of historic claims
+
+2)The data_dictionary.html describes the variables in the dataset
+
+3)Missing Character - ?
+
+Execution:
+
+The Jupyter Notebook can be run after storing the train.csv file in the same directory as the Notebook.
